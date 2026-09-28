@@ -1,4 +1,4 @@
- 🏫 Free Class Locator
+# 🏫 Free Class Locator
 
 A zero-dependency web tool that tells students which classrooms and labs are empty right now, so they can find a quiet place to work without walking floor to floor.
 
@@ -12,6 +12,9 @@ It reads the SEEE (School of Electrical and Electronics Engineering) class timet
   > I need an AC room on the first floor for me and my team for the next 2 hours
 
   The finder pulls out the AC/non-AC preference, floor, lab or classroom, duration, start time and day. It then lists only the rooms that stay free for the whole window, sorted by how long they remain free. If nothing matches, it says so and shows the closest free rooms.
+- **3D Building Map:** stacked floors with color-coded rooms, a rotate slider and a flat-view toggle.
+- **Live countdown:** click a room to see the time left before its next class (or until it frees up).
+- **Call the Squad:** claim a free room and open a pre-filled WhatsApp message such as "📍 Heading to IST 602. It's free until 10:45 AM. Come fast!"
 - Light and dark theme, mobile friendly, no build step.
 
 ## How it works
@@ -34,11 +37,11 @@ It reads the SEEE (School of Electrical and Electronics Engineering) class timet
 
 ## Run locally
 
-No install needed. Either open `free-class-locator.html` in a browser, or serve it:
+No install needed. Either open `index.html` in a browser, or serve it:
 
 ```bash
 python -m http.server 8000
-# then open http://localhost:8000/free-class-locator.html
+# then open http://localhost:8000/index.html
 ```
 
 ## Assumptions and limitations
@@ -53,7 +56,7 @@ python -m http.server 8000
 ## Project structure
 
 ```
-free-class-locator.html   # entire app: data, logic, UI
+index.html   # entire app: data, logic, UI
 README.md
 ```
 
